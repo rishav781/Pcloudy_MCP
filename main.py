@@ -1,6 +1,7 @@
 # Imports
 import httpx
 import logging
+import os
 from fastmcp import FastMCP
 from src.pcloudy_api import PCloudyAPI
 from src.mcp_tools import (
@@ -75,4 +76,8 @@ async def get_device_page_url_tool(rid: str) -> dict:
 # Add this block at the end of the file
 if __name__ == "__main__":
     print("\n--- Starting FastMCP Server via __main__ ---")
-    mcp.run(transport="streamable-http")
+    # Remove 'host' argument for Render compatibility
+    mcp.run(
+        transport="streamable-http",
+        port=int(os.environ.get("PORT", 8000))  # Use Render's PORT env var or default to 8000
+    )
