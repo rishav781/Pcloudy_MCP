@@ -1,0 +1,814 @@
+2025-05-23 11:29:30,993 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 11:29:30,993 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 11:29:30,994 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 11:29:30,994 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 11:29:30,994 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 11:29:30,995 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 11:29:30,995 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 11:29:30,995 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 11:29:32,147 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 11:29:58,265 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 11:29:58,386 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 11:29:58,386 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 11:29:58,386 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 11:29:58,386 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 11:29:58,387 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 11:29:58,389 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 11:29:58,389 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 11:29:59,628 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 11:29:59,796 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 11:29:59,884 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-23 11:30:02,508 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000018CB1743750>
+2025-05-23 11:30:02,509 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-23 11:30:02,510 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-05-23 11:30:02,514 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:30:06,834 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000018CB1742C10>
+2025-05-23 11:30:06,834 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-23 11:30:06,834 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-23 11:30:06,834 - pcloudy-mcp-server - INFO - Tool called: list_available_devices
+2025-05-23 11:30:06,835 - pcloudy-mcp-server - INFO - No authentication token present, authenticating...
+2025-05-23 11:30:06,835 - pcloudy-mcp-server - INFO - Authenticating with pCloudy
+2025-05-23 11:30:06,836 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-23 11:30:08,071 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CB28646E0>
+2025-05-23 11:30:08,071 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000018CB17A8B00> server_hostname='device.pcloudy.com' timeout=300
+2025-05-23 11:30:08,358 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CB1743ED0>
+2025-05-23 11:30:08,358 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-23 11:30:08,360 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:30:08,360 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-23 11:30:08,361 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:30:08,361 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-23 11:30:08,463 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:00:08 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:30:08,464 - httpx - INFO - HTTP Request: GET https://device.pcloudy.com/api/access "HTTP/1.1 200 OK"
+2025-05-23 11:30:08,465 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-23 11:30:08,465 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:30:08,465 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:30:08,466 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:30:08,619 - pcloudy-mcp-server - INFO - Authentication successful
+2025-05-23 11:30:08,619 - pcloudy-mcp-server - INFO - Getting device list for platform android
+2025-05-23 11:30:08,620 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:08,621 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:30:08,622 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:30:08,622 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:30:08,623 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:09,062 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:00:08 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:30:09,062 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/devices "HTTP/1.1 200 OK"
+2025-05-23 11:30:09,062 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:30:09,063 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:30:09,063 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:30:09,063 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:30:09,063 - pcloudy-mcp-server - INFO - Retrieved 12 devices
+2025-05-23 11:30:09,064 - pcloudy-mcp-server - INFO - Found 12 available devices
+2025-05-23 11:30:09,066 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:30:16,155 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000018CB178F5C0>
+2025-05-23 11:30:16,155 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-23 11:30:16,156 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-23 11:30:16,156 - pcloudy-mcp-server - INFO - Tool called: book_device_by_name with device_name=s9
+2025-05-23 11:30:16,156 - pcloudy-mcp-server - INFO - Getting device list for platform android
+2025-05-23 11:30:16,158 - httpcore.connection - DEBUG - close.started
+2025-05-23 11:30:16,161 - httpcore.connection - DEBUG - close.complete
+2025-05-23 11:30:16,161 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-23 11:30:16,224 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CB28C5810>
+2025-05-23 11:30:16,225 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000018CB17A8B00> server_hostname='device.pcloudy.com' timeout=300
+2025-05-23 11:30:16,287 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CB178D940>
+2025-05-23 11:30:16,288 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:16,289 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:30:16,290 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:30:16,292 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:30:16,292 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:16,706 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:00:16 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:30:16,707 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/devices "HTTP/1.1 200 OK"
+2025-05-23 11:30:16,708 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:30:16,708 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:30:16,709 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:30:16,709 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:30:16,710 - pcloudy-mcp-server - INFO - Retrieved 12 devices
+2025-05-23 11:30:16,711 - pcloudy-mcp-server - INFO - Booking device with ID 727
+2025-05-23 11:30:16,712 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:16,713 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:30:16,713 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:30:16,713 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:30:16,714 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:18,390 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:00:18 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:30:18,391 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/book_device "HTTP/1.1 200 OK"
+2025-05-23 11:30:18,391 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:30:18,391 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:30:18,391 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:30:18,391 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:30:18,392 - pcloudy-mcp-server - INFO - Device booked successfully. RID: 3588409
+2025-05-23 11:30:18,392 - pcloudy-mcp-server - INFO - Device 'GalaxyS9' booked successfully. RID: 3588409
+2025-05-23 11:30:18,393 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:30:36,370 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000018CB178ED70>
+2025-05-23 11:30:36,371 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-23 11:30:36,371 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-23 11:30:36,372 - pcloudy-mcp-server - INFO - Tool called: get_device_page_url with rid=3588409
+2025-05-23 11:30:36,372 - pcloudy-mcp-server - INFO - Getting device page URL for RID: 3588409
+2025-05-23 11:30:36,373 - httpcore.connection - DEBUG - close.started
+2025-05-23 11:30:36,374 - httpcore.connection - DEBUG - close.complete
+2025-05-23 11:30:36,374 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-23 11:30:36,487 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CB28CD220>
+2025-05-23 11:30:36,488 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000018CB17A8B00> server_hostname='device.pcloudy.com' timeout=300
+2025-05-23 11:30:36,564 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CB28C8290>
+2025-05-23 11:30:36,565 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:36,565 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:30:36,565 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:30:36,566 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:30:36,566 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:36,650 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:00:36 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:30:36,651 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/get_device_url "HTTP/1.1 200 OK"
+2025-05-23 11:30:36,651 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:30:36,652 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:30:36,652 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:30:36,653 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:30:36,653 - pcloudy-mcp-server - INFO - Device page URL for RID 3588409: https://device.pcloudy.com/device/hcqtvjn6rpmryn56w59qkh97nbc9p768csx4gvfw
+2025-05-23 11:30:36,654 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:30:45,407 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000018CB17AFAD0>
+2025-05-23 11:30:45,407 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-23 11:30:45,407 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-23 11:30:45,408 - pcloudy-mcp-server - INFO - Tool called: release_device with rid=3588409
+2025-05-23 11:30:45,408 - pcloudy-mcp-server - INFO - Releasing device with RID: 3588409
+2025-05-23 11:30:45,409 - httpcore.connection - DEBUG - close.started
+2025-05-23 11:30:45,410 - httpcore.connection - DEBUG - close.complete
+2025-05-23 11:30:45,410 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-23 11:30:46,522 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CB1792470>
+2025-05-23 11:30:46,522 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000018CB17A8B00> server_hostname='device.pcloudy.com' timeout=300
+2025-05-23 11:30:46,588 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CB1792580>
+2025-05-23 11:30:46,588 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:46,589 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:30:46,590 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:30:46,590 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:30:46,591 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:56,240 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:00:55 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:30:56,241 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/release_device "HTTP/1.1 200 OK"
+2025-05-23 11:30:56,241 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:30:56,241 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:30:56,242 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:30:56,242 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:30:56,242 - pcloudy-mcp-server - INFO - Device with RID 3588409 released successfully
+2025-05-23 11:30:56,242 - pcloudy-mcp-server - INFO - Device with RID 3588409 released successfully
+2025-05-23 11:30:56,243 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:30:57,687 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000018CB1433460>
+2025-05-23 11:30:57,688 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-23 11:30:57,689 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-23 11:30:57,689 - pcloudy-mcp-server - INFO - Tool called: release_device with rid=3588409
+2025-05-23 11:30:57,690 - pcloudy-mcp-server - INFO - Releasing device with RID: 3588409
+2025-05-23 11:30:57,692 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:57,696 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:30:57,697 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:30:57,697 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:30:57,699 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:30:57,754 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:00:57 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:30:57,754 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/release_device "HTTP/1.1 200 OK"
+2025-05-23 11:30:57,754 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:30:57,755 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:30:57,755 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:30:57,755 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:30:57,755 - pcloudy-mcp-server - INFO - Device with RID 3588409 released successfully
+2025-05-23 11:30:57,755 - pcloudy-mcp-server - INFO - Device with RID 3588409 released successfully
+2025-05-23 11:30:57,756 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:31:01,543 - httpcore.connection - DEBUG - close.started
+2025-05-23 11:31:01,544 - httpcore.connection - DEBUG - close.complete
+2025-05-23 11:52:11,704 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 11:52:11,705 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 11:52:11,706 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 11:52:11,706 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 11:52:11,707 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 11:52:11,707 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 11:52:11,708 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 11:52:11,708 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 11:52:12,467 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 11:52:28,949 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 11:52:28,949 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 11:52:28,949 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 11:52:28,949 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 11:52:28,949 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 11:52:28,949 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 11:52:28,950 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 11:52:28,950 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 11:52:29,580 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 11:52:29,604 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 11:52:29,664 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-23 11:52:31,627 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x00000211448274D0>
+2025-05-23 11:52:31,627 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-23 11:52:31,627 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-05-23 11:52:31,630 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:52:43,361 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000021144826990>
+2025-05-23 11:52:43,362 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-23 11:52:43,362 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-23 11:52:43,362 - pcloudy-mcp-server - INFO - Tool called: list_available_devices
+2025-05-23 11:52:43,362 - pcloudy-mcp-server - INFO - No authentication token present, authenticating...
+2025-05-23 11:52:43,363 - pcloudy-mcp-server - INFO - Authenticating with pCloudy
+2025-05-23 11:52:43,527 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-23 11:52:45,969 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000211458E0830>
+2025-05-23 11:52:45,969 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000021144888B00> server_hostname='device.pcloudy.com' timeout=300
+2025-05-23 11:52:46,806 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000021144827C50>
+2025-05-23 11:52:46,806 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-23 11:52:46,806 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:52:46,807 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-23 11:52:46,807 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:52:46,807 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-23 11:52:46,890 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:22:46 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:52:46,891 - httpx - INFO - HTTP Request: GET https://device.pcloudy.com/api/access "HTTP/1.1 200 OK"
+2025-05-23 11:52:46,891 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-23 11:52:46,891 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:52:46,891 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:52:46,891 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:52:46,917 - pcloudy-mcp-server - INFO - Authentication successful
+2025-05-23 11:52:46,917 - pcloudy-mcp-server - INFO - Getting device list for platform android
+2025-05-23 11:52:46,919 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:52:46,920 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:52:46,920 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:52:46,921 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:52:46,921 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:52:47,443 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:22:47 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:52:47,444 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/devices "HTTP/1.1 200 OK"
+2025-05-23 11:52:47,444 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:52:47,444 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:52:47,445 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:52:47,445 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:52:47,445 - pcloudy-mcp-server - INFO - Retrieved 12 devices
+2025-05-23 11:52:47,446 - pcloudy-mcp-server - INFO - Found 12 available devices
+2025-05-23 11:52:47,455 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:52:54,391 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000002114486D350>
+2025-05-23 11:52:54,392 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-23 11:52:54,392 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-23 11:52:54,392 - pcloudy-mcp-server - INFO - Tool called: book_device_by_name with device_name=s9
+2025-05-23 11:52:54,392 - pcloudy-mcp-server - INFO - Getting device list for platform android
+2025-05-23 11:52:54,394 - httpcore.connection - DEBUG - close.started
+2025-05-23 11:52:54,395 - httpcore.connection - DEBUG - close.complete
+2025-05-23 11:52:54,396 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-23 11:52:54,469 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000211458F5450>
+2025-05-23 11:52:54,470 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000021144888B00> server_hostname='device.pcloudy.com' timeout=300
+2025-05-23 11:52:54,546 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002114486E8B0>
+2025-05-23 11:52:54,547 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:52:54,547 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:52:54,548 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:52:54,549 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:52:54,549 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:52:54,991 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:22:54 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:52:54,992 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/devices "HTTP/1.1 200 OK"
+2025-05-23 11:52:54,992 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:52:54,992 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:52:54,992 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:52:54,992 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:52:54,993 - pcloudy-mcp-server - INFO - Retrieved 12 devices
+2025-05-23 11:52:54,993 - pcloudy-mcp-server - INFO - Booking device with ID 727
+2025-05-23 11:52:54,994 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:52:54,994 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:52:54,995 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:52:54,995 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:52:54,995 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:52:57,094 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:22:56 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:52:57,095 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/book_device "HTTP/1.1 200 OK"
+2025-05-23 11:52:57,095 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:52:57,095 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:52:57,095 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:52:57,096 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:52:57,096 - pcloudy-mcp-server - INFO - Device booked successfully. RID: 3588417
+2025-05-23 11:52:57,096 - pcloudy-mcp-server - INFO - Device 'GalaxyS9' booked successfully. RID: 3588417
+2025-05-23 11:52:57,097 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:53:09,729 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000002114486E190>
+2025-05-23 11:53:09,730 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-23 11:53:09,730 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-23 11:53:09,731 - pcloudy-mcp-server - INFO - Tool called: capture_device_screenshot with rid=3588417, skin=True
+2025-05-23 11:53:09,731 - pcloudy-mcp-server - INFO - Capturing screenshot for RID: 3588417
+2025-05-23 11:53:09,733 - httpcore.connection - DEBUG - close.started
+2025-05-23 11:53:09,734 - httpcore.connection - DEBUG - close.complete
+2025-05-23 11:53:09,734 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-23 11:53:09,956 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002114590C640>
+2025-05-23 11:53:09,957 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000021144888B00> server_hostname='device.pcloudy.com' timeout=300
+2025-05-23 11:53:10,025 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000021145910050>
+2025-05-23 11:53:10,026 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:53:10,026 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:53:10,026 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:53:10,027 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:53:10,027 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:53:15,289 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:23:14 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:53:15,289 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/capture_device_screenshot "HTTP/1.1 200 OK"
+2025-05-23 11:53:15,289 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:53:15,290 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:53:15,290 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:53:15,290 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:53:15,301 - pcloudy-mcp-server - DEBUG - Raw screenshot API response: {"result":{"token":"74yqpjs7sn2qsprhjxbr5ztq","code":200,"filename":"Screen_GalaxyS9_2025_May_23_6_22_am__463_5a534-17479813897-F.jpg","dir":"rid"}}
+2025-05-23 11:53:15,302 - pcloudy-mcp-server - INFO - Screenshot API response: {'token': '74yqpjs7sn2qsprhjxbr5ztq', 'code': 200, 'filename': 'Screen_GalaxyS9_2025_May_23_6_22_am__463_5a534-17479813897-F.jpg', 'dir': 'rid'}
+2025-05-23 11:53:15,302 - pcloudy-mcp-server - INFO - Screenshot captured successfully: https://device.pcloudy.com/recent/rid/Screen_GalaxyS9_2025_May_23_6_22_am__463_5a534-17479813897-F.jpg
+2025-05-23 11:53:15,302 - pcloudy-mcp-server - INFO - Screenshot captured successfully: https://device.pcloudy.com/recent/rid/Screen_GalaxyS9_2025_May_23_6_22_am__463_5a534-17479813897-F.jpg
+2025-05-23 11:53:15,302 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:53:30,892 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000002114488F770>
+2025-05-23 11:53:30,892 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-23 11:53:30,893 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-23 11:53:30,893 - pcloudy-mcp-server - INFO - Tool called: release_device with rid=3588417
+2025-05-23 11:53:30,893 - pcloudy-mcp-server - INFO - Releasing device with RID: 3588417
+2025-05-23 11:53:30,894 - httpcore.connection - DEBUG - close.started
+2025-05-23 11:53:30,896 - httpcore.connection - DEBUG - close.complete
+2025-05-23 11:53:30,897 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-23 11:53:31,990 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000021144872360>
+2025-05-23 11:53:31,990 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000021144888B00> server_hostname='device.pcloudy.com' timeout=300
+2025-05-23 11:53:32,079 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000211448728B0>
+2025-05-23 11:53:32,079 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:53:32,079 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:53:32,080 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:53:32,080 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:53:32,080 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:53:41,122 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:23:40 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:53:41,122 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/release_device "HTTP/1.1 200 OK"
+2025-05-23 11:53:41,122 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:53:41,123 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:53:41,123 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:53:41,123 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:53:41,123 - pcloudy-mcp-server - INFO - Device with RID 3588417 released successfully
+2025-05-23 11:53:41,124 - pcloudy-mcp-server - INFO - Device with RID 3588417 released successfully
+2025-05-23 11:53:41,124 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:53:43,664 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x00000211444E3460>
+2025-05-23 11:53:43,664 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-23 11:53:43,664 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-23 11:53:43,664 - pcloudy-mcp-server - INFO - Tool called: release_device with rid=3588417
+2025-05-23 11:53:43,665 - pcloudy-mcp-server - INFO - Releasing device with RID: 3588417
+2025-05-23 11:53:43,665 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-23 11:53:43,666 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-23 11:53:43,667 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-23 11:53:43,668 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-23 11:53:43,668 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-23 11:53:43,724 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 06:23:43 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-23 11:53:43,724 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/release_device "HTTP/1.1 200 OK"
+2025-05-23 11:53:43,725 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-23 11:53:43,725 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-23 11:53:43,725 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-23 11:53:43,725 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-23 11:53:43,726 - pcloudy-mcp-server - INFO - Device with RID 3588417 released successfully
+2025-05-23 11:53:43,726 - pcloudy-mcp-server - INFO - Device with RID 3588417 released successfully
+2025-05-23 11:53:43,726 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 11:53:51,654 - httpcore.connection - DEBUG - close.started
+2025-05-23 11:53:51,655 - httpcore.connection - DEBUG - close.complete
+2025-05-23 11:54:04,926 - cli - ERROR - Dev server failed
+2025-05-23 11:54:31,289 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 11:54:31,290 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 11:54:31,291 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 11:54:31,292 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 11:54:31,292 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 11:54:31,293 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 11:54:31,293 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 11:54:31,294 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 11:54:31,887 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:07:19,715 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 12:07:19,717 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 12:07:19,717 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 12:07:19,718 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 12:07:19,718 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 12:07:19,718 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 12:07:19,719 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 12:07:19,720 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 12:07:20,518 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:17:59,311 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 12:17:59,314 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 12:17:59,314 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 12:17:59,315 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 12:17:59,315 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 12:17:59,316 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 12:17:59,316 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 12:17:59,317 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 12:18:00,066 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:18:34,358 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 12:18:34,359 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 12:18:34,360 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 12:18:34,360 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 12:18:34,361 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 12:18:34,369 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 12:18:34,370 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 12:18:34,371 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 12:18:34,977 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:22:06,515 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 12:22:06,516 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 12:22:06,516 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 12:22:06,517 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 12:22:06,517 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 12:22:06,518 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 12:22:06,518 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 12:22:06,519 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 12:22:07,533 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:25:15,186 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 12:25:15,187 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 12:25:15,188 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 12:25:15,189 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 12:25:15,190 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 12:25:15,191 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 12:25:15,191 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 12:25:15,193 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 12:25:15,840 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:26:07,055 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 12:26:07,056 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 12:26:07,056 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 12:26:07,057 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 12:26:07,058 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 12:26:07,059 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 12:26:07,059 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 12:26:07,060 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 12:26:07,698 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:27:00,112 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 12:27:00,114 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 12:27:00,115 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 12:27:00,116 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 12:27:00,117 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 12:27:00,118 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 12:27:00,119 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 12:27:00,120 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 12:27:00,827 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:29:37,276 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 12:29:37,278 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 12:29:37,279 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 12:29:37,281 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 12:29:37,282 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 12:29:37,284 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 12:29:37,286 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 12:29:37,287 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 12:29:38,935 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:33:32,574 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 12:33:32,575 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 12:33:32,576 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 12:33:32,577 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 12:33:32,578 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 12:33:32,579 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 12:33:32,579 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 12:33:32,579 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 12:33:33,362 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:33:33,392 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 12:33:33,453 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-05-23 12:57:22,500 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-05-23 12:59:34,562 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 12:59:34,564 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 12:59:34,564 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 12:59:34,565 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 12:59:34,565 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 12:59:34,566 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 12:59:34,566 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 12:59:34,567 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 12:59:35,428 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 12:59:35,454 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 12:59:35,501 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-05-23 13:04:54,252 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-05-23 13:04:58,045 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 13:04:58,045 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 13:04:58,046 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 13:04:58,047 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 13:04:58,047 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 13:04:58,048 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 13:04:58,049 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 13:04:58,049 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 13:04:58,679 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 13:05:32,761 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 13:05:32,762 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 13:05:32,762 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 13:05:32,763 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 13:05:32,764 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 13:05:32,765 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 13:05:32,765 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 13:05:32,766 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 13:05:33,373 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 13:06:11,491 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 13:06:11,491 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 13:06:11,492 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 13:06:11,493 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 13:06:11,493 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 13:06:11,494 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 13:06:11,494 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 13:06:11,495 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 13:06:12,137 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 13:06:27,163 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 13:06:27,163 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 13:06:27,164 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 13:06:27,165 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 13:06:27,165 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 13:06:27,166 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 13:06:27,167 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 13:06:27,168 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 13:06:27,829 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 13:06:27,852 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 13:06:27,884 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-05-23 13:18:33,983 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2025-05-23 13:26:59,116 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 13:26:59,117 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 13:26:59,118 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 13:26:59,119 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 13:26:59,120 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 13:26:59,121 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 13:26:59,123 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 13:26:59,124 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 13:26:59,879 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 13:27:25,824 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 13:27:25,824 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 13:27:25,824 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 13:27:25,824 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 13:27:25,824 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 13:27:25,825 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 13:27:25,825 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 13:27:25,825 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 13:27:26,515 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 13:27:26,538 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 13:27:26,589 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-23 13:27:29,152 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x00000211AF64F4D0>
+2025-05-23 13:27:29,152 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-23 13:27:29,153 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-05-23 13:27:29,156 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-23 13:35:39,507 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 13:35:39,508 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 13:35:39,508 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 13:35:39,509 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 13:35:39,510 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 13:35:39,510 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 13:35:39,511 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 13:35:39,511 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 13:35:40,173 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 13:37:23,496 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 13:37:23,497 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 13:37:23,497 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 13:37:23,497 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 13:37:23,498 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 13:37:23,498 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 13:37:23,498 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 13:37:23,498 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 13:37:24,102 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 13:37:24,129 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-23 13:37:24,174 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-23 18:20:55,909 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 18:20:55,912 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 18:20:55,913 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 18:20:55,915 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 18:20:55,916 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 18:20:55,917 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 18:20:55,917 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 18:20:55,918 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 18:20:57,620 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 18:21:37,704 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-23 18:21:37,705 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-23 18:21:37,706 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-23 18:21:37,707 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-23 18:21:37,708 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-23 18:21:37,709 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-23 18:21:37,710 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-23 18:21:37,711 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-23 18:21:38,992 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-23 18:21:39,042 - mcp.cli.claude - INFO - Added server 'pcloudy_MCP' to Claude config
+2025-05-23 18:21:39,043 - cli - INFO - Successfully installed pcloudy_MCP in Claude app
+2025-05-24 01:00:53,996 - mcp.server.lowlevel.server - DEBUG - Initializing server 'pcloudy_MCP'
+2025-05-24 01:00:54,001 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-05-24 01:00:54,002 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-05-24 01:00:54,003 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-05-24 01:00:54,005 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-05-24 01:00:54,006 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-05-24 01:00:54,007 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-05-24 01:00:54,009 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourceTemplatesRequest
+2025-05-24 01:00:55,803 - pcloudy-mcp-server - INFO - PCloudyAPI initialized
+2025-05-24 01:00:55,853 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-05-24 01:00:55,874 - FastMCP.fastmcp.server.server - INFO - Starting MCP server 'pcloudy_MCP' with transport 'streamable-http' on http://127.0.0.1:8000/mcp
+2025-05-24 01:00:56,103 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2025-05-24 01:02:14,636 - mcp.server.streamable_http_manager - DEBUG - Creating new transport
+2025-05-24 01:02:14,646 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 544fc92c966145abb2f9a0e0ea79cdcb
+2025-05-24 01:02:14,716 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:02:14,717 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":0,"result":{"protocolVersion":"2024-11-05","capabilities":{"experimental":{},"prompts":{"listChanged":false},"resources":{"subscribe":false,"listChanged":false},"tools":{"listChanged":false}},"serverInfo":{"name":"pcloudy_MCP","version":"1.9.1"}}}\r\n\r\n'
+2025-05-24 01:02:14,721 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:02:14,898 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:02:14,904 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-24 01:02:14,946 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:02:18,360 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:02:18,373 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000024FB43BC050>
+2025-05-24 01:02:18,374 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-05-24 01:02:18,375 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-05-24 01:02:18,380 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-24 01:02:18,382 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:02:18,383 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":1,"result":{"tools":[{"name":"list_available_devices_tool","description":"List the names of available Android devices.","inputSchema":{"properties":{},"type":"object"}},{"name":"book_device_by_name_tool","description":"Book an Android device by matching the provided device name from the available list.","inputSchema":{"properties":{"device_name":{"title":"Device Name","type":"string"}},"required":["device_name"],"type":"object"}},{"name":"upload_file_tool","description":"Upload a file to the pCloudy cloud drive, but only if it does not already exist.","inputSchema":{"properties":{"file_path":{"title":"File Path","type":"string"},"source_type":{"default":"raw","title":"Source Type","type":"string"},"filter_type":{"default":"all","title":"Filter Type","type":"string"}},"required":["file_path"],"type":"object"}},{"name":"execute_adb_command_tool","description":"Execute an ADB command on a booked device.","inputSchema":{"properties":{"rid":{"title":"Rid","type":"string"},"adb_command":{"title":"Adb Command","type":"string"}},"required":["rid","adb_command"],"type":"object"}},{"name":"capture_device_screenshot_tool","description":"Capture a screenshot of a booked device.","inputSchema":{"properties":{"rid":{"title":"Rid","type":"string"},"skin":{"default":true,"title":"Skin","type":"boolean"}},"required":["rid"],"type":"object"}},{"name":"install_and_launch_app_tool","description":"Install and launch an app on a booked device.","inputSchema":{"properties":{"rid":{"title":"Rid","type":"string"},"filename":{"title":"Filename","type":"string"},"grant_all_permissions":{"default":true,"title":"Grant All Permissions","type":"boolean"}},"required":["rid","filename"],"type":"object"}},{"name":"release_device_tool","description":"Release a booked device.","inputSchema":{"properties":{"rid":{"title":"Rid","type":"string"}},"required":["rid"],"type":"object"}},{"name":"get_device_page_url_tool","description":"Get the pCloudy device page URL to view the device screen.","inputSchema":{"properties":{"rid":{"title":"Rid","type":"string"}},"required":["rid"],"type":"object"}}]}}\r\n\r\n'
+2025-05-24 01:02:18,385 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:02:25,289 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:02:25,293 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000024FB43BC550>
+2025-05-24 01:02:25,294 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-24 01:02:25,294 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-24 01:02:25,299 - pcloudy-mcp-server - INFO - Tool called: list_available_devices
+2025-05-24 01:02:25,299 - pcloudy-mcp-server - INFO - No authentication token present, authenticating...
+2025-05-24 01:02:25,300 - pcloudy-mcp-server - INFO - Authenticating with pCloudy
+2025-05-24 01:02:25,309 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-24 01:02:26,467 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FB438B770>
+2025-05-24 01:02:26,469 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024FB4262A80> server_hostname='device.pcloudy.com' timeout=300
+2025-05-24 01:02:26,620 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FB43BDD10>
+2025-05-24 01:02:26,621 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-05-24 01:02:26,623 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-24 01:02:26,624 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-05-24 01:02:26,625 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-24 01:02:26,625 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-05-24 01:02:26,736 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 19:32:26 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-24 01:02:26,740 - httpx - INFO - HTTP Request: GET https://device.pcloudy.com/api/access "HTTP/1.1 200 OK"
+2025-05-24 01:02:26,741 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-05-24 01:02:26,742 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-24 01:02:26,743 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-24 01:02:26,744 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-24 01:02:26,746 - pcloudy-mcp-server - INFO - Authentication successful
+2025-05-24 01:02:26,746 - pcloudy-mcp-server - INFO - Getting device list for platform android
+2025-05-24 01:02:26,748 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-24 01:02:26,749 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-24 01:02:26,750 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-24 01:02:26,752 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-24 01:02:26,753 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-24 01:02:27,373 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 19:32:27 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-24 01:02:27,374 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/devices "HTTP/1.1 200 OK"
+2025-05-24 01:02:27,374 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-24 01:02:27,375 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-24 01:02:27,376 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-24 01:02:27,376 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-24 01:02:27,377 - pcloudy-mcp-server - INFO - Retrieved 15 devices
+2025-05-24 01:02:27,378 - pcloudy-mcp-server - INFO - Found 15 available devices
+2025-05-24 01:02:27,381 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-24 01:02:27,383 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:02:27,385 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":2,"result":{"content":[{"type":"text","text":"{\\n  \\"content\\": [\\n    {\\n      \\"type\\": \\"text\\",\\n      \\"text\\": \\"Available devices: GalaxyS9, GalaxyS10, Pixel2XL, GalaxyA10s, Pixel7Pro, GalaxyF145G, GalaxyM53, GalaxyS215G, GalaxyS215G, GalaxyS215G, Pixel6, Pixel9ProXL, Pixel7, Pixel8, GalaxyS25\\"\\n    }\\n  ],\\n  \\"isError\\": false\\n}"}],"isError":false}}\r\n\r\n'
+2025-05-24 01:02:27,388 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:02:29,950 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:32:29.949777+00:00\r\n\r\n'
+2025-05-24 01:02:35,305 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:02:35,308 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000024FB43D1350>
+2025-05-24 01:02:35,309 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-24 01:02:35,309 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-24 01:02:35,310 - pcloudy-mcp-server - INFO - Tool called: book_device_by_name with device_name=s9
+2025-05-24 01:02:35,311 - pcloudy-mcp-server - INFO - Getting device list for platform android
+2025-05-24 01:02:35,312 - httpcore.connection - DEBUG - close.started
+2025-05-24 01:02:35,315 - httpcore.connection - DEBUG - close.complete
+2025-05-24 01:02:35,316 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-24 01:02:35,435 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FB43BFB10>
+2025-05-24 01:02:35,435 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024FB4262A80> server_hostname='device.pcloudy.com' timeout=300
+2025-05-24 01:02:35,502 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FB43D1A70>
+2025-05-24 01:02:35,503 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-24 01:02:35,504 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-24 01:02:35,505 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-24 01:02:35,505 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-24 01:02:35,506 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-24 01:02:35,996 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 19:32:35 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-24 01:02:35,997 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/devices "HTTP/1.1 200 OK"
+2025-05-24 01:02:35,998 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-24 01:02:35,999 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-24 01:02:36,000 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-24 01:02:36,001 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-24 01:02:36,002 - pcloudy-mcp-server - INFO - Retrieved 15 devices
+2025-05-24 01:02:36,002 - pcloudy-mcp-server - INFO - Booking device with ID 727
+2025-05-24 01:02:36,003 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-24 01:02:36,004 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-24 01:02:36,005 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-24 01:02:36,006 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-24 01:02:36,006 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-24 01:02:37,824 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 19:32:37 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-24 01:02:37,824 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/book_device "HTTP/1.1 200 OK"
+2025-05-24 01:02:37,825 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-24 01:02:37,826 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-24 01:02:37,826 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-24 01:02:37,827 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-24 01:02:37,827 - pcloudy-mcp-server - INFO - Device booked successfully. RID: 3588521
+2025-05-24 01:02:37,828 - pcloudy-mcp-server - INFO - Device 'GalaxyS9' booked successfully. RID: 3588521
+2025-05-24 01:02:37,828 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-24 01:02:37,829 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:02:37,830 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":3,"result":{"content":[{"type":"text","text":"{\\n  \\"content\\": [\\n    {\\n      \\"type\\": \\"text\\",\\n      \\"text\\": \\"Device \'GalaxyS9\' booked successfully. RID: 3588521\\"\\n    }\\n  ],\\n  \\"isError\\": false\\n}"}],"isError":false}}\r\n\r\n'
+2025-05-24 01:02:37,832 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:02:44,962 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:32:44.961938+00:00\r\n\r\n'
+2025-05-24 01:02:59,966 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:32:59.966297+00:00\r\n\r\n'
+2025-05-24 01:03:00,653 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:03:00,657 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000024FB43D10F0>
+2025-05-24 01:03:00,658 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-24 01:03:00,662 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-24 01:03:00,688 - pcloudy-mcp-server - INFO - Tool called: capture_device_screenshot with rid=3588521
+, skin=True
+2025-05-24 01:03:00,689 - pcloudy-mcp-server - INFO - Capturing screenshot for RID: 3588521
+
+2025-05-24 01:03:00,690 - httpcore.connection - DEBUG - close.started
+2025-05-24 01:03:00,692 - httpcore.connection - DEBUG - close.complete
+2025-05-24 01:03:00,694 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-24 01:03:01,910 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FB4301940>
+2025-05-24 01:03:01,914 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024FB4262A80> server_hostname='device.pcloudy.com' timeout=300
+2025-05-24 01:03:02,010 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FB41AFAD0>
+2025-05-24 01:03:02,011 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-24 01:03:02,013 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-24 01:03:02,013 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-24 01:03:02,014 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-24 01:03:02,015 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-24 01:03:06,995 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 19:33:06 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-24 01:03:07,000 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/capture_device_screenshot "HTTP/1.1 200 OK"
+2025-05-24 01:03:07,042 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-24 01:03:07,049 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-24 01:03:07,051 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-24 01:03:07,055 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-24 01:03:07,173 - pcloudy-mcp-server - DEBUG - Raw screenshot API response: {"result":{"token":"fmnhx8qmcy46hwzpdkdgyhfx","code":200,"filename":"Screen_GalaxyS9_2025_May_23_7_32_pm__463_5a534-17480287820-F.jpg","dir":"rid"}}
+2025-05-24 01:03:07,189 - pcloudy-mcp-server - INFO - Screenshot API response: {'token': 'fmnhx8qmcy46hwzpdkdgyhfx', 'code': 200, 'filename': 'Screen_GalaxyS9_2025_May_23_7_32_pm__463_5a534-17480287820-F.jpg', 'dir': 'rid'}
+2025-05-24 01:03:07,232 - pcloudy-mcp-server - INFO - Screenshot captured successfully: https://device.pcloudy.com/recent/rid/Screen_GalaxyS9_2025_May_23_7_32_pm__463_5a534-17480287820-F.jpg
+2025-05-24 01:03:07,262 - pcloudy-mcp-server - INFO - Screenshot captured successfully: https://device.pcloudy.com/recent/rid/Screen_GalaxyS9_2025_May_23_7_32_pm__463_5a534-17480287820-F.jpg
+2025-05-24 01:03:07,269 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-24 01:03:07,278 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:03:07,280 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":4,"result":{"content":[{"type":"text","text":"{\\n  \\"content\\": [\\n    {\\n      \\"type\\": \\"text\\",\\n      \\"text\\": \\"Screenshot captured successfully: https://device.pcloudy.com/recent/rid/Screen_GalaxyS9_2025_May_23_7_32_pm__463_5a534-17480287820-F.jpg\\"\\n    }\\n  ],\\n  \\"isError\\": false\\n}"}],"isError":false}}\r\n\r\n'
+2025-05-24 01:03:07,299 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:03:14,971 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:33:14.971725+00:00\r\n\r\n'
+2025-05-24 01:03:29,984 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:33:29.983977+00:00\r\n\r\n'
+2025-05-24 01:03:44,995 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:33:44.994896+00:00\r\n\r\n'
+2025-05-24 01:04:00,005 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:34:00.005673+00:00\r\n\r\n'
+2025-05-24 01:04:15,013 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:34:15.013657+00:00\r\n\r\n'
+2025-05-24 01:04:21,019 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:04:21,029 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000024FB43FB0B0>
+2025-05-24 01:04:21,031 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-24 01:04:21,031 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-24 01:04:21,034 - pcloudy-mcp-server - INFO - Tool called: get_device_page_url with rid=3588521
+2025-05-24 01:04:21,035 - pcloudy-mcp-server - INFO - Getting device page URL for RID: 3588521
+2025-05-24 01:04:21,044 - httpcore.connection - DEBUG - close.started
+2025-05-24 01:04:21,047 - httpcore.connection - DEBUG - close.complete
+2025-05-24 01:04:21,047 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-24 01:04:24,178 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FB43AC270>
+2025-05-24 01:04:24,179 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024FB4262A80> server_hostname='device.pcloudy.com' timeout=300
+2025-05-24 01:04:24,277 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FB43AD7B0>
+2025-05-24 01:04:24,277 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-24 01:04:24,279 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-24 01:04:24,279 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-24 01:04:24,280 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-24 01:04:24,280 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-24 01:04:24,336 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 19:34:24 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-24 01:04:24,337 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/get_device_url "HTTP/1.1 200 OK"
+2025-05-24 01:04:24,338 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-24 01:04:24,339 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-24 01:04:24,341 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-24 01:04:24,341 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-24 01:04:24,342 - pcloudy-mcp-server - INFO - Device page URL for RID 3588521: https://device.pcloudy.com/device/45q3swpvybcr32xjmzz5ryptdzsmvr8swjk9qjkv
+2025-05-24 01:04:24,345 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-24 01:04:24,346 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:04:24,347 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":5,"result":{"content":[{"type":"text","text":"{\\n  \\"content\\": [\\n    {\\n      \\"type\\": \\"text\\",\\n      \\"text\\": \\"Device page URL: https://device.pcloudy.com/device/45q3swpvybcr32xjmzz5ryptdzsmvr8swjk9qjkv\\"\\n    }\\n  ],\\n  \\"isError\\": false\\n}"}],"isError":false}}\r\n\r\n'
+2025-05-24 01:04:24,348 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:04:30,018 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:34:30.018754+00:00\r\n\r\n'
+2025-05-24 01:04:45,030 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:34:45.030380+00:00\r\n\r\n'
+2025-05-24 01:05:00,039 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:35:00.039614+00:00\r\n\r\n'
+2025-05-24 01:05:10,179 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:05:10,187 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000024FB43AE580>
+2025-05-24 01:05:10,187 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-05-24 01:05:10,188 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-05-24 01:05:10,189 - pcloudy-mcp-server - INFO - Tool called: capture_device_screenshot with rid=3588521, skin=True
+2025-05-24 01:05:10,190 - pcloudy-mcp-server - INFO - Capturing screenshot for RID: 3588521
+2025-05-24 01:05:10,192 - httpcore.connection - DEBUG - close.started
+2025-05-24 01:05:10,194 - httpcore.connection - DEBUG - close.complete
+2025-05-24 01:05:10,194 - httpcore.connection - DEBUG - connect_tcp.started host='device.pcloudy.com' port=443 local_address=None timeout=300 socket_options=None
+2025-05-24 01:05:11,436 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FB43D9C50>
+2025-05-24 01:05:11,437 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024FB4262A80> server_hostname='device.pcloudy.com' timeout=300
+2025-05-24 01:05:11,508 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024FB43D9850>
+2025-05-24 01:05:11,509 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-24 01:05:11,510 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-05-24 01:05:11,511 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-24 01:05:11,512 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-05-24 01:05:11,512 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-24 01:05:18,080 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx'), (b'Date', b'Fri, 23 May 2025 19:35:17 GMT'), (b'Content-Type', b'text/html; charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; preload'), (b'X-Forwarded-Host', b'disable'), (b'X-Content-Type-Options', b'nosniff'), (b'X-XSS-Protection', b'1; mode=block')])
+2025-05-24 01:05:18,082 - httpx - INFO - HTTP Request: POST https://device.pcloudy.com/api/capture_device_screenshot "HTTP/1.1 200 OK"
+2025-05-24 01:05:18,083 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-24 01:05:18,084 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-05-24 01:05:18,085 - httpcore.http11 - DEBUG - response_closed.started
+2025-05-24 01:05:18,086 - httpcore.http11 - DEBUG - response_closed.complete
+2025-05-24 01:05:18,088 - pcloudy-mcp-server - DEBUG - Raw screenshot API response: {"result":{"token":"fmnhx8qmcy46hwzpdkdgyhfx","code":200,"filename":"Screen_GalaxyS9_2025_May_23_7_32_pm__463_5a534-17480289114-F.jpg","dir":"rid"}}
+2025-05-24 01:05:18,089 - pcloudy-mcp-server - INFO - Screenshot API response: {'token': 'fmnhx8qmcy46hwzpdkdgyhfx', 'code': 200, 'filename': 'Screen_GalaxyS9_2025_May_23_7_32_pm__463_5a534-17480289114-F.jpg', 'dir': 'rid'}
+2025-05-24 01:05:18,090 - pcloudy-mcp-server - INFO - Screenshot captured successfully: https://device.pcloudy.com/recent/rid/Screen_GalaxyS9_2025_May_23_7_32_pm__463_5a534-17480289114-F.jpg
+2025-05-24 01:05:18,091 - pcloudy-mcp-server - INFO - Screenshot captured successfully: https://device.pcloudy.com/recent/rid/Screen_GalaxyS9_2025_May_23_7_32_pm__463_5a534-17480289114-F.jpg
+2025-05-24 01:05:18,094 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-05-24 01:05:18,096 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:35:18.096474+00:00\r\n\r\n'
+2025-05-24 01:05:18,098 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:05:18,100 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":6,"result":{"content":[{"type":"text","text":"{\\n  \\"content\\": [\\n    {\\n      \\"type\\": \\"text\\",\\n      \\"text\\": \\"Screenshot captured successfully: https://device.pcloudy.com/recent/rid/Screen_GalaxyS9_2025_May_23_7_32_pm__463_5a534-17480289114-F.jpg\\"\\n    }\\n  ],\\n  \\"isError\\": false\\n}"}],"isError":false}}\r\n\r\n'
+2025-05-24 01:05:18,102 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:05:33,105 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:35:33.105404+00:00\r\n\r\n'
+2025-05-24 01:05:48,118 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:35:48.118126+00:00\r\n\r\n'
+2025-05-24 01:06:03,133 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:36:03.132842+00:00\r\n\r\n'
+2025-05-24 01:06:18,147 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:36:18.147547+00:00\r\n\r\n'
+2025-05-24 01:06:29,625 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:06:29,629 - mcp.server.streamable_http - DEBUG - Closing standalone SSE writer
+2025-05-24 01:06:29,730 - mcp.server.streamable_http_manager - DEBUG - Creating new transport
+2025-05-24 01:06:29,732 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 408375c613e743a88e1f1950607277e3
+2025-05-24 01:06:29,792 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:06:29,793 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":0,"result":{"protocolVersion":"2024-11-05","capabilities":{"experimental":{},"prompts":{"listChanged":false},"resources":{"subscribe":false,"listChanged":false},"tools":{"listChanged":false}},"serverInfo":{"name":"pcloudy_MCP","version":"1.9.1"}}}\r\n\r\n'
+2025-05-24 01:06:29,797 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:06:29,952 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:06:29,957 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-24 01:06:29,992 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:06:32,939 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:06:32,940 - mcp.server.streamable_http - DEBUG - Closing standalone SSE writer
+2025-05-24 01:06:32,987 - mcp.server.streamable_http_manager - DEBUG - Creating new transport
+2025-05-24 01:06:32,987 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 7a87c7d48e164c31ad94dc17742f36e4
+2025-05-24 01:06:33,001 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:06:33,002 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":0,"result":{"protocolVersion":"2024-11-05","capabilities":{"experimental":{},"prompts":{"listChanged":false},"resources":{"subscribe":false,"listChanged":false},"tools":{"listChanged":false}},"serverInfo":{"name":"pcloudy_MCP","version":"1.9.1"}}}\r\n\r\n'
+2025-05-24 01:06:33,003 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:06:33,118 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:06:33,121 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-24 01:06:33,173 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:06:34,464 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:06:34,465 - mcp.server.streamable_http - DEBUG - Closing standalone SSE writer
+2025-05-24 01:06:34,511 - mcp.server.streamable_http_manager - DEBUG - Creating new transport
+2025-05-24 01:06:34,513 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 02331a50102145f79d526d5899ab4a60
+2025-05-24 01:06:34,535 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:06:34,536 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":0,"result":{"protocolVersion":"2024-11-05","capabilities":{"experimental":{},"prompts":{"listChanged":false},"resources":{"subscribe":false,"listChanged":false},"tools":{"listChanged":false}},"serverInfo":{"name":"pcloudy_MCP","version":"1.9.1"}}}\r\n\r\n'
+2025-05-24 01:06:34,537 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:06:34,666 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:06:34,688 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-24 01:06:34,738 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:06:35,904 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:06:35,905 - mcp.server.streamable_http - DEBUG - Closing standalone SSE writer
+2025-05-24 01:06:35,948 - mcp.server.streamable_http_manager - DEBUG - Creating new transport
+2025-05-24 01:06:35,949 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 01e11e2a54da4f44b4c9f3082313bc84
+2025-05-24 01:06:35,964 - mcp.server.streamable_http - DEBUG - Closing SSE writer
+2025-05-24 01:06:35,965 - sse_starlette.sse - DEBUG - chunk: b'event: message\r\ndata: {"jsonrpc":"2.0","id":0,"result":{"protocolVersion":"2024-11-05","capabilities":{"experimental":{},"prompts":{"listChanged":false},"resources":{"subscribe":false,"listChanged":false},"tools":{"listChanged":false}},"serverInfo":{"name":"pcloudy_MCP","version":"1.9.1"}}}\r\n\r\n'
+2025-05-24 01:06:35,967 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:06:36,148 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:06:36,151 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-24 01:06:36,195 - mcp.server.streamable_http_manager - DEBUG - Session already exists, handling request directly
+2025-05-24 01:06:51,202 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:36:51.202432+00:00\r\n\r\n'
+2025-05-24 01:07:06,215 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:37:06.215272+00:00\r\n\r\n'
+2025-05-24 01:07:21,221 - sse_starlette.sse - DEBUG - ping: b': ping - 2025-05-23 19:37:21.221715+00:00\r\n\r\n'
+2025-05-24 01:07:24,796 - sse_starlette.sse - DEBUG - Got event: http.disconnect. Stop streaming.
+2025-05-24 01:07:24,799 - mcp.server.streamable_http - DEBUG - Closing standalone SSE writer
